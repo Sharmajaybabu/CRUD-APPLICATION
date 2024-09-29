@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>CRUD APPLICATION</h1>
+    <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="First name should contain only letters.">
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="last name should contain only letters.">
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required> 
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Submit</button>
+        <button type="button" id="clearBtn">Clear</button>
+    </form>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
